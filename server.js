@@ -14,6 +14,7 @@ const client = require('twilio')(
 
 
 const app = express();
+
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -32,14 +33,12 @@ app.get('/', (req, res) => {
     res.render('index', data);
 });
 
-app.post('/index', (req, res) => {
+app.post('/', (req, res) => {
     client.messages.create({
         from: process.env.TWILIO_PHONE_NUMBER,
         to: process.env.CELL_PHONE_NUMBER,
         body: req.body.firstName + ' ' + req.body.lastName + ' has viewed your portfolio, and wants to talk to you. Please contact them at ' + req.body.email + '.'
     })
-    .then((message) => console.log(message.sid))
-    // .then(res.end())
 });
 
 app.listen(PORT, () => {

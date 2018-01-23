@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 function handleClick(e) {
-    e.preventDefault();
+    // e.preventDefault();
     let firstName = document.getElementById('firstName').value;
     let lastName = document.getElementById('lastName').value;
     let email = document.getElementById('email').value;
