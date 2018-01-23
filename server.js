@@ -33,12 +33,23 @@ app.get('/', (req, res) => {
     res.render('index', data);
 });
 
-app.post('/', (req, res) => {
+app.post('/thanks', (req, res) => {
+    console.log(req.body);
+    const newData = {
+        thankYou: {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email
+        }
+    }
+
     client.messages.create({
         from: process.env.TWILIO_PHONE_NUMBER,
         to: process.env.CELL_PHONE_NUMBER,
         body: req.body.firstName + ' ' + req.body.lastName + ' has viewed your portfolio, and wants to talk to you. Please contact them at ' + req.body.email + '.'
     })
+    .then((message) => console.log(message.sid))
+    .then(res.render('thanks', newData))
 });
 
 app.listen(PORT, () => {

@@ -15,9 +15,7 @@
     <body>
         <nav class='grey darken-1' role="navigation">
             <div class='nav-wrapper'>
-                <div class='valign-wrapper'>
-                    <p class='brand-logo' style='padding-left:15px'>Welcome!</p>
-                </div>
+                <a href='/' class='brand-logo' style='padding-left:15px'>Welcome!</a>
                 <ul class='right hide-on-med-and-down'>
                     <li><a href="https://github.com/bbenoi01" target='_blank'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/brandon-benoit-99551292/" target='_blank'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
@@ -37,7 +35,7 @@
                     <h1 class='header center yellow-text text-accent-2'>Brandon's Portfolio</h1>
                     <div class='row center'>
                         <h5 class='header col s12 yellow-text text-accent-2'>
-                            Hello! My name is <%= person.firstName %> <%= person.lastName %>. Welcome to my personal portfolio.<br>
+                            Hello! My name is Brandon Benoit. Welcome to my personal portfolio.<br>
                             This page serves as a showcase of some of the things I have worked on. I hope you enjoy them!
                         </h5>
                     </div>
@@ -110,22 +108,22 @@
                     <div class='col s12 center'>
                         <h4>Contact Me</h4>
                         <div class='container'>
-                            <form onSubmit='handleClick()' action='/thanks' method='POST'>
+                            <form>
                                 <div class='row'>
                                     <div class='col s3'>
-                                        <input type="text" name="firstName" id='firstName'>
+                                        <input type="text" name="firstName" class='disabled'>
                                         <label for="firstName">First Name</label>
                                     </div>
                                     <div class='col s3'>
-                                        <input type="text" name="lastName" id='lastName'>
+                                        <input type="text" name="lastName" class='disabled'>
                                         <label for="lastName">Last Name</label>
                                     </div>
                                     <div class='col s3'>
-                                        <input type="text" name="email" id='email'>
+                                        <input type="text" name="email" class='disabled'>
                                         <label for="email">Email</label>
                                     </div>
                                     <div class='col s3'>
-                                        <button class="btn blue waves-effect waves-light" type="submit">Submit</button>
+                                        <button class="btn blue waves-effect waves-light disabled" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -136,6 +134,13 @@
         </div>
 
         <div class='parallax-container valign-wrapper'>
+            <div class='section no-pad-bot'>
+                <div class='container'>
+                    <div class='row center'>
+                        <h3 class='yellow-text text-accent-2' id='thanks'>Thank you <%= thankYou.firstName %> <%= thankYou.lastName %>, for your interest. I will reach out to you at <%= thankYou.email %> shortly.</h3>
+                    </div>
+                </div>
+            </div>
             <div class="parallax">
                 <img style='width:100vw' src="starfield.jpeg" alt="Unsplashed space">
             </div>
