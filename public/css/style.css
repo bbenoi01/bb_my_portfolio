@@ -1,0 +1,115 @@
+nav ul a, footer a,
+nav .brand-logo {
+  color: whitesmoke;
+}
+
+ul {
+  height: 54px
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: whitesmoke;
+}
+
+.parallax-container {
+  min-height: 380px;
+  width: 100%;
+  line-height: 0;
+  height: auto;
+  color: whitesmoke;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  top: -25px;
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 600%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: -100px;
+  transform-origin: 50% 100%;
+  animation: crawl 45s ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+  top: -100px;
+  transform: rotateX(20deg)  translateZ(0);
+}
+  100% { 
+  top: -6000px;
+  transform: rotateX(25deg) translateZ(-2500px);
+}
+}
+
+#contact, #projects {
+  background-color: #616161;
+}
+
+#me {
+  width: 400px
+}
+
+.img-fluid {
+  max-width: 100%
+}

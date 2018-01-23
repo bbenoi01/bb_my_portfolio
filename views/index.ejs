@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>My Portfolio</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <nav class='grey darken-1' role="navigation">
+            <div class='nav-wrapper'>
+                <div class='valign-wrapper'>
+                    <p class='brand-logo' style='padding-left:15px'>Welcome!</p>
+                </div>
+                <ul class='right hide-on-med-and-down'>
+                    <li><a href="https://github.com/bbenoi01" target='_blank'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/brandon-benoit-99551292/" target='_blank'><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <ul id='nav-mobile' class='side-nav'>
+                    <li><a href="https://github.com/bbenoi01" target='_blank'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/brandon-benoit-99551292/" target='_blank'><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+                </ul>
+                <a href="#" data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
+            </div>
+        </nav>
+
+        <div id='index-banner' class='parallax-container valign-wrapper'>
+            <div class='section no-pad-bot'>
+                <div class='container'>
+                    <h1 class='header center yellow-text text-accent-2'>Brandon's Portfolio</h1>
+                    <div class='row center'>
+                        <h5 class='header col s12 yellow-text text-accent-2'>
+                            Hello! My name is <%= person.firstName %> <%= person.lastName %>. Welcome to my personal portfolio.<br>
+                            This page serves as a showcase of some of the things I have worked on. I hope you enjoy them!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <img style='width:100vw' src="starfield.jpeg" alt="Unsplashed space">
+            </div>
+        </div>
+
+        <div id='projects'>
+            <div class='section'>
+                <div class='row valign-wrapper'>
+                    <div class='col s4 m4' style='margin-left:4vw'>
+                        <div class='single-item'>
+                            <div><a href="https://bb-change-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Change Calc.png"></a></div>
+                            <div><a href="https://bb-mortgage-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Mortgage Calc.png"></a></div>
+                            <div><a href="https://bb-weather-app.herokuapp.com/" target='_blank'><img class='img-fluid' src="Weather.png"></a></div>
+                            <div><a href="https://delicious-deliveries.herokuapp.com/" target='_blank'><img class='img-fluid' src="Delicious Deliveries.png"></a></div>
+                        </div>
+                    </div>
+                    <div class='col s4 m4 center-align' id='me' style='margin-left:0'>
+                        <img src="Me.png" alt="">
+                    </div>
+                    <div class='col s4 m4' style='margin-left:0'>
+                        <div class='single-item'>
+                            <div><a href="https://bb-vstda.herokuapp.com/" target='_blank'><img class='img-fluid' src="VSTDA.png"></a></div>
+                            <div><a href="https://bb-nfl-schedule-generator.herokuapp.com/" target='_blank'><img class='img-fluid' src="NFL Schedule.png"></a></div>
+                            <div><a href="https://bb-movie-finder.herokuapp.com/" target='_blank'><img class='img-fluid' src="Movie Finder.png"></a></div>
+                            <div><a href="https://jobleads.herokuapp.com/" target='_blank'><img class='img-fluid' src="JobLeads2.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='parallax-container valign-wrapper'>
+            <div class='section no-pad-bot'>
+                <div class='container'>
+                    <div class='row center'>
+                        <div class='fade'></div>
+                        <section class='star-wars'>
+                            <div class='crawl yellow-text text-accent-2'>
+                                <div class='title'>
+                                    <h1>About Me</h1>
+                                </div>
+                                <h5>Hello, and thank you for visiting my portfolio. My name is Brandon Benoit, I'd like to tell you a little about myself and let you know why
+                                   I created this page. I've spent the better part of the last 23 years working in the wireless industy. Spending most of my time in retail,
+                                   I've held positions in sales, sales management, sales operations and logistics, and sales training. After a while, I changed my focus and
+                                   got my A+ certification with the intention of going into IT. Unfortunately, before I was able to pursue this new career path, I was laid off.
+                                   I am currently attending Origin Code Academy, where I am studying coding. We have been introduced to a few different languages including
+                                   JavaScript, HTML, and React. We have also done work with CSS, MySQL, MongoDB, Express, and I am currently beginning to start working with
+                                   Redux and React Router. I have learned a lot, but I also realize that I have a lot to learn! I am currently seeking employment as a junior
+                                   developer. If you would like to get ahold of me, please visit my contact page and send me your name and email address and I will promptly get
+                                   back to you.
+                                </h5>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <img style='width:100vw' src="starfield.jpeg" alt="Unsplashed space">
+            </div>
+        </div>
+
+        <div id='contact'>
+            <div class='section'>
+                <div class='row'>
+                    <div class='col s12 center'>
+                        <h4>Contact Me</h4>
+                        <div class='container'>
+                            <form onSubmit='handleClick()' action='/index' method='POST'>
+                                <div class='row'>
+                                    <div class='col s3'>
+                                        <input type="text" name="firstName" id='firstName'>
+                                        <label for="firstName">First Name</label>
+                                    </div>
+                                    <div class='col s3'>
+                                        <input type="text" name="lastName" id='lastName'>
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                    <div class='col s3'>
+                                        <input type="text" name="email" id='email'>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class='col s3'>
+                                        <button class="btn blue waves-effect waves-light" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='parallax-container valign-wrapper'>
+            <div class='section no-pad-bot'>
+                <div class='container'>
+                    <div class='row center'>
+                        <h3 class='yellow-text text-accent-2' id='thanks'></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <img style='width:100vw' src="starfield.jpeg" alt="Unsplashed space">
+            </div>
+        </div>
+
+        <footer class='page-footer grey darken-1'>
+            <div class='container'>
+                <div class='row center'>
+                    <div class='col s3'>
+                        <a href=""><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class='col s3'>
+                        <a href="mailto:brandon.benoit076@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class='col s3'>
+                        <a href="https://github.com/bbenoi01" target='_blank'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class='col s3'>
+                        <a href="https://www.linkedin.com/in/brandon-benoit-99551292/" target='_blank'><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by Brandon Benoit
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type='text/javascript' src='./js/init.js'></script>
+
+    </body>
+</html>
