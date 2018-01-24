@@ -34,9 +34,9 @@
         <div id='index-banner' class='parallax-container valign-wrapper'>
             <div class='section no-pad-bot'>
                 <div class='container'>
-                    <h1 class='header center yellow-text text-accent-2'>Brandon's Portfolio</h1>
+                    <h1 class='header center swy'>Brandon's Portfolio</h1>
                     <div class='row center'>
-                        <h5 class='header col s12 yellow-text text-accent-2'>
+                        <h5 class='header col s12 swy'>
                             Hello! My name is <%= person.firstName %> <%= person.lastName %>. Welcome to my personal portfolio.<br>
                             This page serves as a showcase of some of the things I have worked on. I hope you enjoy them!
                         </h5>
@@ -51,7 +51,7 @@
         <div id='projects'>
             <div class='section'>
                 <div class='row valign-wrapper'>
-                    <div class='col s10 m4' style='margin-left:4vw'>
+                    <div class='col s11 m4' style='margin-left:4vw'>
                         <div class='single-item'>
                             <div><a href="https://bb-change-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Change Calc.png"></a></div>
                             <div><a href="https://bb-mortgage-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Mortgage Calc.png"></a></div>
@@ -59,10 +59,10 @@
                             <div><a href="https://delicious-deliveries.herokuapp.com/" target='_blank'><img class='img-fluid' src="Delicious Deliveries.png"></a></div>
                         </div>
                     </div>
-                    <div class='col s4 m4 center-align' id='me' style='margin-left:0'>
+                    <div class='col s12 m4 center-align img-fluid' id='me' style='margin-left:0'>
                         <img src="Me.png" alt="">
                     </div>
-                    <div class='col s10 m4' style='margin-left:0'>
+                    <div class='col s11 m4' style='margin-left:0'>
                         <div class='single-item'>
                             <div><a href="https://bb-vstda.herokuapp.com/" target='_blank'><img class='img-fluid' src="VSTDA.png"></a></div>
                             <div><a href="https://bb-nfl-schedule-generator.herokuapp.com/" target='_blank'><img class='img-fluid' src="NFL Schedule.png"></a></div>
@@ -74,26 +74,34 @@
             </div>
         </div>
 
-        <div class='parallax-container valign-wrapper'>
+        <div class='parallax-container valign-wrapper' id='about'>
             <div class='section no-pad-bot'>
                 <div class='container'>
                     <div class='row center'>
                         <div class='fade'></div>
                         <section class='star-wars'>
-                            <div class='crawl yellow-text text-accent-2'>
+                            <div class='crawl swy'>
                                 <div class='title'>
+                                    <p>Brandon Benoit</p>
                                     <h1>About Me</h1>
                                 </div>
-                                <h5>Hello, and thank you for visiting my portfolio. My name is Brandon Benoit, I'd like to tell you a little about myself and let you know why
-                                   I created this page. I've spent the better part of the last 23 years working in the wireless industy. Spending most of my time in retail,
-                                   I've held positions in sales, sales management, sales operations and logistics, and sales training. After a while, I changed my focus and
-                                   got my A+ certification with the intention of going into IT. Unfortunately, before I was able to pursue this new career path, I was laid off.
-                                   I am currently attending Origin Code Academy, where I am studying coding. We have been introduced to a few different languages including
-                                   JavaScript, HTML, and React. We have also done work with CSS, MySQL, MongoDB, Express, and I am currently beginning to start working with
-                                   Redux and React Router. I have learned a lot, but I also realize that I have a lot to learn! I am currently seeking employment as a junior
-                                   developer. If you would like to get ahold of me, please visit my contact page and send me your name and email address and I will promptly get
-                                   back to you.
-                                </h5>
+                                <p>Hello, and thank you for visiting my portfolio. My name is Brandon Benoit, 
+                                   I'd like to tell you a little about myself and let you know why I created this page.
+                                </p>
+                                <p>I've spent the better part of the last 23 years working in the wireless industy. Spending 
+                                   most of my time in retail, I've held positions in sales, sales management, sales operations 
+                                   and logistics, and sales training. After a while, I changed my focus and got my A+ certification 
+                                   with the intention of going into IT.
+                                </p>
+                                <p>I have recently graduated from  Origin Code Academy, where I was introduced 
+                                   to a few different technologies including but not limited to JavaScript, HTML, and React.
+                                </p> 
+                                <p>I have also done work with CSS, MySQL, MongoDB, Express, React, and Redux. I have learned
+                                   a lot, but I also realize that I have a lot to learn!
+                                </p> 
+                                <p>I am currently seeking employment as a web developer. If you would like to get ahold of me, please 
+                                   enter your information in the Contact Me section, and I will promptly get back to you.
+                                </p>
                             </div>
                         </section>
                     </div>
@@ -110,7 +118,7 @@
                     <div class='col s12 center'>
                         <h4>Contact Me</h4>
                         <div class='container'>
-                            <form onSubmit='handleClick()' action='/thanks' method='POST'>
+                            <form action='/thanks' method='POST'>
                                 <div class='row'>
                                     <div class='col s3'>
                                         <input type="text" name="firstName" id='firstName'>

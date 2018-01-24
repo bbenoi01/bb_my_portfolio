@@ -36,6 +36,11 @@ app.get('/', (req, res) => {
 app.post('/thanks', (req, res) => {
     console.log(req.body);
     const newData = {
+        person: {
+            firstName: 'Brandon',
+            lastName: 'Benoit'
+        },
+        
         thankYou: {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
