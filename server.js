@@ -1,7 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-// const twilio = requrie('twilio');
 const PORT = process.env.PORT || 3000;
 
 require('dotenv').load();
@@ -10,8 +9,6 @@ const client = require('twilio')(
     process.env.TWILIO_ACCOUNT_SID,
     process.env.TWILIO_AUTH_TOKEN
 );
-
-
 
 const app = express();
 
