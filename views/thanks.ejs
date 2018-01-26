@@ -29,43 +29,139 @@
             </div>
         </nav>
 
-        <div id='index-banner' class='parallax-container valign-wrapper'>
-            <div class='section no-pad-bot'>
-                <div class='container'>
-                    <h1 class='header center swy'>Brandon's Portfolio</h1>
-                    <div class='row center'>
-                        <h5 class='header col s12 swy'>
-                            Hello! My name is Brandon Benoit. Welcome to my personal portfolio.<br>
-                            This page serves as a showcase of some of the things I have worked on. I hope you enjoy them!
+        <div class="parallax-container valign-wrapper" id='index-banner'>
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <h1 class="header center swy">Brandon's Protfolio</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 swy">
+                            Hello! My name is <%= person.firstName %> <%= person.lastName %>. Welcome to my personal portfolio.<br/>
+                            This page serves as a showcase of some of the things that I have worked on. I hope you enjoy them!
                         </h5>
+                    </div>
+                    <div class="row center">
+                        <div class="col s12">
+                            <img src="me.png" alt="responsive img"/>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="parallax">
-                <img style='width:100vw' src="starfield.jpeg" alt="Unsplashed space">
+                <img src="starfield.jpeg" alt="unsplashed space" style={{width: '100%'}}/>
             </div>
         </div>
 
-        <div id='projects'>
-            <div class='section'>
-                <div class='row valign-wrapper'>
-                    <div class='col s10 m4' style='margin-left:4vw'>
-                        <div class='single-item'>
-                            <div><a href="https://bb-change-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Change Calc.png"></a></div>
-                            <div><a href="https://bb-mortgage-calculator.herokuapp.com/" target='_blank'><img class='img-fluid' src="Mortgage Calc.png"></a></div>
-                            <div><a href="https://bb-weather-app.herokuapp.com/" target='_blank'><img class='img-fluid' src="Weather.png"></a></div>
-                            <div><a href="https://delicious-deliveries.herokuapp.com/" target='_blank'><img class='img-fluid' src="Delicious Deliveries.png"></a></div>
-                        </div>
-                    </div>
-                    <div class='col s4 m4 center-align' id='me' style='margin-left:0'>
-                        <img src="Me.png" alt="">
-                    </div>
-                    <div class='col s10 m4' style='margin-left:0'>
-                        <div class='single-item'>
-                            <div><a href="https://bb-vstda.herokuapp.com/" target='_blank'><img class='img-fluid' src="VSTDA.png"></a></div>
-                            <div><a href="https://bb-nfl-schedule-generator.herokuapp.com/" target='_blank'><img class='img-fluid' src="NFL Schedule.png"></a></div>
-                            <div><a href="https://bb-movie-finder.herokuapp.com/" target='_blank'><img class='img-fluid' src="Movie Finder.png"></a></div>
-                            <div><a href="https://jobleads.herokuapp.com/" target='_blank'><img class='img-fluid' src="JobLeads2.png"></a></div>
+        <div class="section" id='projects'>
+            <div class="container">
+                <div class="row center swy">
+                    <h4>Projects</h4>
+                </div>
+                <div class="row center">
+                    <div class="col s12 offset-l3 offset-s3">
+                        <div class="single-item">
+                            <div class='project-item'>
+                                <a href="https://bb-change-calculator.herokuapp.com/" target='_blank'>
+                                    <img src="Change Calc.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created using React, Express, and Axios that gives the difference 
+                                               between two dollar amounts and accurately displays change broken down 
+                                               by demonination.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://bb-mortgage-calculator.herokuapp.com/" target='_blank'>
+                                    <img src="Mortgage Calc.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created using React, Express, and Axios that, given loan balance
+                                               and interest rate, will display the loan payment based on either a 15
+                                               or 30 year term.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://bb-weather-app.herokuapp.com/" target='_blank'>
+                                    <img src="Weather.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created using React, Redux Express, and Axios that gives current
+                                               weather information for any city in the world. Weather information provided
+                                               by Open Weather Map API.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://delicious-deliveries.herokuapp.com/" target='_blank'>
+                                    <img src="Delicious Deliveries.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created with a host of technologies including but not limited to React,
+                                               Redux, Loopback, and MongoDB. This is a PostMates style food ordering app that
+                                               uses the Google Distance API to search for restaurants in your area.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://bb-vstda.herokuapp.com/" target='_blank'>
+                                    <img src="VSTDA.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created with React, Express, and Axios to help create and keep track of
+                                               daily to do items.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://bb-nfl-schedule-generator.herokuapp.com/" target='_blank'>
+                                    <img src="NFL Schedule.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created using React, Express, and Axios that shows the schedule of your
+                                               favorite NFL franchise. NFL information provided by FantasyData.com API and
+                                               map information provided by Pigeon Maps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://bb-movie-finder.herokuapp.com/" target='_blank'>
+                                    <img src="Movie Finder.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created using React, Redux, Express, Axios, and Thunk that searches and
+                                               displays movie information from the Open Movie Database API.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='project-item'>
+                                <a href="https://jobleads.herokuapp.com/" target='_blank'>
+                                    <img src="JobLeads2.png" alt="responsive image" class="img-fluid"/>
+                                    <div class='project-hover'>
+                                        <div class='inside'>
+                                            <p>An app created with a host of technologies including but not limited to React,
+                                               Redux, Loopback, and MongoDB to help graduating students of Origin Code Academy
+                                               search for jobs, apply to jobs, and track the application process through intergration
+                                               with the JobTrack web site. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,31 +206,36 @@
             </div>
         </div>
 
-        <div id='contact'>
-            <div class='section'>
-                <div class='row'>
-                    <div class='col s12 center'>
-                        <h4>Contact Me</h4>
-                        <div class='container'>
-                            <form>
-                                <div class='row'>
-                                    <div class='col s3'>
-                                        <input type="text" name="firstName" class='disabled'>
-                                        <label for="firstName">First Name</label>
-                                    </div>
-                                    <div class='col s3'>
-                                        <input type="text" name="lastName" class='disabled'>
-                                        <label for="lastName">Last Name</label>
-                                    </div>
-                                    <div class='col s3'>
-                                        <input type="text" name="email" class='disabled'>
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class='col s3'>
-                                        <button class="btn blue waves-effect waves-light disabled" type="submit">Submit</button>
+        <div class="section" id='contact'>
+            <div class="row">
+                <div class="col s12 center">
+                    <h4 class='swy'>Contact Me</h4>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s4 offset-s4">
+                                <div class="card grey darken-4">
+                                    <div class="card-content white-text">
+                                        <form action='/thanks' method='POST'>
+                                            <div class='input-field'>
+                                                <input type="text" name='firstName' id='firstName'/>
+                                                <label htmlFor="firstName">First Name</label>
+                                            </div>
+                                            <div class='input-field'>
+                                                <input type="text" name='lastName' id='lastName'/>
+                                                <label htmlFor="lastName">Last Name</label>
+                                            </div>
+                                            <div class='input-field'>
+                                                <input type="email" name='email' id='email'/>
+                                                <label htmlFor="email">Email</label>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <button class="btn blue waves-effect waves-light disabled" type='submit'>Submit</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
